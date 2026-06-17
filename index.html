@@ -1,17 +1,90 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Técnico da Pecuária</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<h1>Mundo da pecuária</h1>
-<p>Vou compartilhar conhecimentos sobre pecuária</p>
-</body>
-</html><main>
-<h2>Meu primeiro post</h2>
-<p>Por: Lucio Lopes Boza</p>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar meu conhecimentos e algumas dicas sobre o mundo da pecuária no Brasil.</p>
+
+<header>
+  <h1>🐄 Blog Técnico da Pecuária</h1>
+  <p>Ciência, produção e inovação no agronegócio</p>
+  <span class="autor">Por Lucio Lopes Boza</span>
+</header>
+
+<nav>
+  <button onclick="filterPosts('all')">Todos</button>
+  <button onclick="filterPosts('bovinos')">Bovinos</button>
+  <button onclick="filterPosts('nutricao')">Nutrição</button>
+  <button onclick="filterPosts('tecnologia')">Tecnologia</button>
+</nav>
+
+<main>
+
+  <!-- POST 1 -->
+  <article class="post bovinos">
+    <h2>🐂 Digestão dos Bovinos (Sistema Ruminante)</h2>
+    <p>
+      Bovinos possuem um estômago com quatro compartimentos: rúmen, retículo, omaso e abomaso.
+      Esse sistema permite a fermentação de fibras vegetais com auxílio de microrganismos.
+    </p>
+    <ul>
+      <li>🧫 Micro-organismos são essenciais para digestão da celulose</li>
+      <li>⏳ Processo pode levar até 70 horas</li>
+      <li>🌿 Permite aproveitamento de pastagens pobres</li>
+    </ul>
+    <button onclick="toggleCuriosidade(this)">Curiosidade técnica</button>
+    <div class="curiosidade">
+      Bovinos podem produzir até 200 litros de saliva por dia, ajudando a estabilizar o pH do rúmen.
+    </div>
+  </article>
+
+  <!-- POST 2 -->
+  <article class="post nutricao">
+    <h2>🌽 Nutrição Animal de Alta Performance</h2>
+    <p>
+      A nutrição representa até 70% do custo da produção pecuária.
+      Dietas balanceadas aumentam ganho de peso e eficiência alimentar.
+    </p>
+    <ul>
+      <li>Proteína bruta: essencial para crescimento muscular</li>
+      <li>Energia metabolizável: derivada de milho e sorgo</li>
+      <li>Minerais: cálcio e fósforo são fundamentais</li>
+    </ul>
+    <button onclick="toggleCuriosidade(this)">Curiosidade técnica</button>
+    <div class="curiosidade">
+      Bovinos de corte bem alimentados podem atingir mais de 1,5 kg de ganho de peso diário.
+    </div>
+  </article>
+
+  <!-- POST 3 -->
+  <article class="post tecnologia">
+    <h2>🚜 Pecuária de Precisão</h2>
+    <p>
+      A tecnologia no campo está revolucionando a produção animal com sensores e dados em tempo real.
+    </p>
+    <ul>
+      <li>📡 Monitoramento por GPS</li>
+      <li>🐄 Identificação eletrônica de animais</li>
+      <li>📊 Análise de produtividade automatizada</li>
+    </ul>
+    <button onclick="toggleCuriosidade(this)">Curiosidade técnica</button>
+    <div class="curiosidade">
+      Já existem fazendas que usam inteligência artificial para prever doenças antes dos sintomas aparecerem.
+    </div>
+  </article>
+
 </main>
+
+<footer>
+  <p>© 2026 Blog Técnico da Pecuária</p>
+  <p>Desenvolvido por Lucio Lopes Boza</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
